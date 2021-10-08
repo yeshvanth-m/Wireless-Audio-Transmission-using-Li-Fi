@@ -2,7 +2,7 @@
 Wireless Audio Transmission using Li-Fi - Red Pitaya based Project
 
 <p align="center">
-  <img src="https://s3.us-west-2.amazonaws.com/gh-assets.chatwoot.com/brand.svg" alt="Woot-logo" width="240" />
+  <img src="https://redpitaya.com/wp-content/uploads/2021/04/redpitaya-logo.svg" alt="Woot-logo" width="240" />
 
   <p align="center">Customer engagement suite, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.</p>
 </p>
