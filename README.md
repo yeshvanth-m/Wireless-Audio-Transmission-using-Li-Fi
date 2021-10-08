@@ -9,9 +9,12 @@ ___
 <img src="" width="100%" alt=""/>
 
 
+Chatwoot gives an integrated view of conversations happening in different communication channels.
 
-- **M
-- **N
+It supports the following conversation channels:
+
+ - **Hi**: AB
+ - **Hello**: CD
 
 ## D
 
