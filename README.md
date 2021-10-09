@@ -90,6 +90,12 @@ Gather the components and prototype using the breadboard
 
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Demod_test_components.jpg" alt="mod" width="50%"/>
 
+Assembled Setup
+
+<img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Demodulator_Testing.jpg" alt="mod" width="50%"/>
+
+
+
 ## D
 
 ### H
