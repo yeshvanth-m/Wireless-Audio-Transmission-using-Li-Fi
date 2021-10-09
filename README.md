@@ -3,7 +3,6 @@
 <p align="center">
   <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Main_Photo.jpg" alt="Cover"/>
 </p>
-___
 
 ## Introduction to Li-Fi
 Li-Fi (also written as LiFi) acronym for Light Fidelity is a wireless communication technology which utilizes light to transmit data and position between devices. 
