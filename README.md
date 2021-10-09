@@ -1,9 +1,5 @@
 # Wireless Audio Transmission using Li-Fi
 
-<p align="center">
-  <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Main_Photo.jpg" alt="Cover"/>
-</p>
-
 ## Introduction to Li-Fi
 Li-Fi (also written as LiFi) acronym for Light Fidelity is a wireless communication technology which utilizes light to transmit data and position between devices. 
 It is capable of transmitting data at high speeds over the visible light, ultraviolet, and infrared spectrums. In its present state, only LED lamps can be used for the transmission of data in visible light. In terms of its end use, the technology is similar to Wi-Fi — the key technical difference being that Wi-Fi uses radio frequency to induce a voltage in an antenna to transmit data, whereas Li-Fi uses the modulation of light intensity to transmit data. Li-Fi can theoretically transmit at speeds of up to 100 Gbit/s. Li-Fi's ability to safely function in areas otherwise susceptible to electromagnetic interference (e.g. aircraft cabins, hospitals, military) is an advantage. The technology is being developed by several organizations across the globe.
@@ -40,7 +36,7 @@ The Red Pitaya has 2 Fast Analog RF Outputs as shown below in the block diagram:
 3. Connect the Micro-BNC to BNC connector to Red Pitaya
 - <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/RP_with_Connector.jpg" alt="rp"/>
 4. Finally connect the BNC of the mudulator to Red Pitaya
-- <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Modulator_Setup.jpg" alt="mod"/>
+- <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Modulator_Setup.jpg" alt="mod" width="60%"/>
 
 ## Analysing the performance of Solar Cell for Li-Fi
 ### Choosing the right solar cell
@@ -59,10 +55,10 @@ Same way analyze the output for different solar cells
 
 [![Performace](https://img.youtube.com/vi/Nkylwls0E3c/0.jpg)](http://www.youtube.com/watch?v=Nkylwls0E3c)
 
-### Solar Cell 1 Response
+### Solar Cell #1 Response
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/graphs3.jpg" alt="mod" width="50%"/>
 
-### Solar Cell 1 Response
+### Solar Cell #2 Response
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/graphs1.jpg" alt="mod" width="50%"/>
 
 ## Li-Fi Demodulator
@@ -100,12 +96,64 @@ Test Setup
 
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Demod_setup.jpg" alt="mod" width="50%"/>
 
+### Frequency Test upto 22kHz 
 
-## D
+<p> Click on the image below to play the video. </p>
 
-### H
+[![Performace](https://img.youtube.com/vi/0lLrks1bQIg/0.jpg)](http://www.youtube.com/watch?v=0lLrks1bQIg)
 
-<img src="" width="100%" alt=""/>
-<a href=""><img src="" /></a>
+The above video shows the frequency response of the Li-Fi system. Next stage is building the Li-Fi Receiver 
+
+### Building the Li-Fi Demodulator
+
+Assemble the circuit in a perf board and finish the soldering. 
+
+<img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Receiver_2.jpg" alt="mod" width="50%"/>
+
+## Generating Piano Music using Python
+
+### SCPI Server
+
+Red Pitaya board can be controlled remotely over LAN or wireless interface using MATLAB, LabVIEW, Scilab or Python via Red Pitaya SCPI (Standard Commands for Programmable Instrumentation) list of commands. SCPI interface/environment is commonly used to control T&M instruments for development, research or test automation purposes. SCPI uses a set of SCPI commands that are recognized by the instruments to enable specific actions to be taken (e.g.: acquiring data from fast analog inputs, generating signals and controlling other periphery of the Red Pitaya platform). The SCPI commands are extremely useful when complex signal analysis is required where SW environment such as MATLAB provides powerful data analysis tools and SCPI commands simple access to raw data acquired on Red Pitaya board.
+
+Features
+- Quickly write control routines and programs using MATLAB, LabVIEW, Scilab or Python
+- Write testing scripts and routines
+- Take quick measurements directly with your PC
+
+Block Diagram explaining SCPI on Red Pitaya
+
+<img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/SCPI.png" alt="mod" width="75%"/>
+
+### SCPI Commands over Python
+
+The Red Pitaya Module in Python provides methods which are easy to implement.
+Refer the documentation for more information on SCPI.
+
+This SCPI command is used to set the frequency of the fast analog output channel: rp_s.tx_txt('SOUR1:FREQ:FIX ' + str(f))
+Where f is desired frequency to be outputted.
+
+### Playing tones
+
+To play the keyboard notes, we need to know the frequency of each note. 
+For simplicity reasons I took the 5th octave. 
+
+Here's an image from Digilent's Reference:
+
+<img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Frequencies.PNG" alt="Cover"/>
+
+The respective frequencies of the keyboard notes for a song with required delay is to be sent to the SCPI server. 
+Refer to the code in the Python Directory of this repository. 
+
+### Testing the Li-Fi Audio System
+Click on the image below to play the video.
+
+[![Performace](https://img.youtube.com/vi/oaPoHxmlVdA/0.jpg)](http://www.youtube.com/watch?v=oaPoHxmlVdA)
+
+## Li-Fi Audio System with Multiple Receivers
+
+<p align="center">
+  <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Main_Photo.jpg" alt="Cover"/>
+</p>
 
 
