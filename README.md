@@ -1,4 +1,4 @@
-# Wireless-Audio-Transmission-using-Li-Fi
+# Wireless Audio Transmission using Li-Fi
 
 <p align="center">
   <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Main_Photo.jpg" alt="Cover"/>
