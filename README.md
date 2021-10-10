@@ -197,7 +197,7 @@ $ git clone https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-
 $ python Play_Music.py 192.168.137.43
 ```
 
-# How to Use
+# How to Use the Code
 
 The Play_Music.py file contains the code for generating the Piano Music.
 I've set the frequencies corresponding to the 5th Octave, how ever you may modify the code and add additional functionalities.
