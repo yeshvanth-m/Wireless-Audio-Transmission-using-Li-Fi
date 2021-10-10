@@ -97,7 +97,7 @@ Test Setup
 
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Demod_setup.jpg" alt="mod" width="50%"/>
 
-### Frequency Test upto 22kHz 
+### Frequency Test upto 20kHz 
 
 <p> Click on the image below to play the video. </p>
 
