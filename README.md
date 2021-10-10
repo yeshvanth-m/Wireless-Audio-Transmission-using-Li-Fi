@@ -20,6 +20,7 @@ The Red Pitaya has 2 Fast Analog RF Outputs as shown below in the block diagram:
 </p>
 
 ### Things required for Li-Fi Modulator
+- Red Pitaya STEMlab 125-10 Starter Kit
 - Perf Board and Soldering Kit
 - BNC Connector
 - Micro-BNC to BNC Converter
@@ -178,7 +179,28 @@ Two sets of receivers are to be built for this model
 ## Working of the Li-Fi Audio System with Multiple Receivers Model
  
 [![Performace](https://img.youtube.com/vi/_GhAeeB7jKg/0.jpg)](http://www.youtube.com/watch?v=_GhAeeB7jKg)
- 
 
+# Software Requirements
+- Python version 3.10.0 or above
+ 
+# Installation 
+
+1. Once you're done with the hardware, make sure you give the right connections as mentioned in the circuit diagrams.
+2. Go to the Red Pitaya's Home Page > Development > Run
+3. Note down the IP address in which the SCPI server is hosted. 
+4. Create a directory in your local machine and clone this repository using the command
+```
+$ git clone https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi.git
+```
+5. Navigate to the Python Folder and then run the following command, say the IP address of the SCPI server is "192.168.137.43"
+```
+$ python Play_Music.py 192.168.137.43
+```
+
+# How to Use
+
+# Contribute 
+
+# Credits
 
 
