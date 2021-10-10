@@ -199,8 +199,25 @@ $ python Play_Music.py 192.168.137.43
 
 # How to Use
 
-# Contribute 
+The Play_Music.py file contains the code for generating the Piano Music.
+I've set the frequencies corresponding to the 5th Octave, how ever you may modify the code and add additional functionalities.
 
-# Credits
+The string notes contains the keyboard notes and the delays for a particular song. You can play any music of your choice just by editing the notes string.
+For example, the Piano Notes for London Bridge is falling down is given as 
+
+```
+notes = "g a g f e f g , d e f , e f g , g a g f e f g . d , g . e c"
+```
+
+And, the notes for Mary Had a Little Lamb is give as
+```
+notes = "e d c d e e e , d d d , e e e , e d c d e e e e d d e d c"
+```
+
+You can write notes for any other piano song the same way.
+
+# Acknowledgements
+
+I would like to thank the Red Pitaya team for sending me the STEMlab 125-10 Starter Kit and giving me this oppurtunity to explore and learn new things!
 
 
