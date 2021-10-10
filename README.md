@@ -152,8 +152,33 @@ Click on the image below to play the video.
 
 ## Li-Fi Audio System with Multiple Receivers
 
+### Reflective Solar Cell
+To have multiple receivers to same light signal, a reflective solar cell is required as shown in the image below.
+
+<img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/RSC.png" alt="RSC" width="50%"/>
+
+This specific type of Solar Cell absorbs some light falling on it and reflects the rest. Thus multiple receivers can be used by using this type of solar cell.
+
+### Block Diagram of the Multiple Receiver Setup
+
+<img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Multiple_Receiver_Block_Diagram.png" alt="BD"/>
+
+*When light is reflected from a surface, the angle of incidence is always equal to the angle of reflection, where both angles are measured from the path of the light to the normal to the surface at the point at which light strikes the surface.* This is called the law of reflection. Thus multiple receivers can be used by proper placement of Solar Cells. 
+
+Two sets of receivers are to be built for this model
+
+<img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Receiver_1&2.jpg" alt="BD" width="50%">
+
+### Final Setup
+
 <p align="center">
   <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Main_Photo.jpg" alt="Cover"/>
 </p>
+
+## Working of the Li-Fi Audio System with Multiple Receivers Model
+ 
+[![Performace](https://img.youtube.com/vi/_GhAeeB7jKg/0.jpg)](http://www.youtube.com/watch?v=_GhAeeB7jKg)
+ 
+
 
 
