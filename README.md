@@ -134,6 +134,8 @@ Refer the documentation for more information on SCPI.
 This SCPI command is used to set the frequency of the fast analog output channel: rp_s.tx_txt('SOUR1:FREQ:FIX ' + str(f))
 Where f is desired frequency to be outputted.
 
+To know more about interfacing Red Pitaya with Python, follow this link: https://www.youtube.com/watch?v=5vXjdO9vmiY
+
 ### Playing tones
 
 To play the keyboard notes, we need to know the frequency of each note. 
