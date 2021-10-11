@@ -1,8 +1,8 @@
 # Wireless Audio Transmission using Li-Fi
 
 ## Introduction to Li-Fi
-Li-Fi (also written as LiFi) acronym for Light Fidelity is a wireless communication technology which utilizes light to transmit data and position between devices. 
-It is capable of transmitting data at high speeds over the visible light, ultraviolet, and infrared spectrums. In its present state, only LED lamps can be used for the transmission of data in visible light. In terms of its end use, the technology is similar to Wi-Fi — the key technical difference being that Wi-Fi uses radio frequency to induce a voltage in an antenna to transmit data, whereas Li-Fi uses the modulation of light intensity to transmit data. Li-Fi can theoretically transmit at speeds of up to 100 Gbit/s. Li-Fi's ability to safely function in areas otherwise susceptible to electromagnetic interference (e.g. aircraft cabins, hospitals, military) is an advantage. The technology is being developed by several organizations across the globe.
+Li-Fi (also written as LiFi) acronym for Light Fidelity is a wireless communication technology that utilizes light to transmit data and position between devices. 
+It is capable of transmitting data at high speeds over visible light, ultraviolet, and infrared spectrums. In its present state, only LED lamps can be used for the transmission of data in visible light. In terms of its end-use, the technology is similar to Wi-Fi — the key technical difference being that Wi-Fi uses radio frequency to induce a voltage in an antenna to transmit data, whereas Li-Fi uses the modulation of light intensity to transmit data. Li-Fi can theoretically transmit at speeds of up to 100 Gbit/s. Li-Fi's ability to safely function in areas otherwise susceptible to electromagnetic interference (e.g. aircraft cabins, hospitals, military) is an advantage. The technology is being developed by several organizations across the globe.
 
 ## Li-Fi Modulator
 The Red Pitaya has 2 Fast Analog RF Outputs as shown below in the block diagram:
@@ -23,20 +23,20 @@ The Red Pitaya has 2 Fast Analog RF Outputs as shown below in the block diagram:
 - Red Pitaya STEMlab 125-10 Starter Kit
 - Perf Board and Soldering Kit
 - BNC Connector
-- Micro-BNC to BNC Converter
+- SMA to BNC Converter
 - Laser Diode Module
 - NPN Transistor (BC547)
 - Resistor (1k)
 - Wires and Jumpers
 
 ### Building the Li-Fi Modulator
-1. Take a BNC connector and connect wires to it's terminals 
+1. Take a BNC connector and connect wires to its terminals 
 - <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/BNC_with_Wire.jpg" alt="Circuit Diagram" width="40%"/>
 2. Take a perf board and solder the components including the BNC with wires to it according to the circuit diagram
 - <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Components_with_Perf_Board_Mod_Li_Fi.jpg" alt="Circuit Diagram" width="40%"/>
-3. Connect the Micro-BNC to BNC connector to Red Pitaya
+3. Connect the SMA to BNC converter to Red Pitaya
 - <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/RP_with_Connector.jpg" alt="rp"/>
-4. Finally connect the BNC of the mudulator to Red Pitaya
+4. Finally connect the BNC of the modulator to Red Pitaya
 - <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Modulator_Setup.jpg" alt="mod" width="60%"/>
 
 ## Analysing the performance of Solar Cell for Li-Fi
@@ -63,9 +63,9 @@ Same way analyze the output for different solar cells
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/graphs1.jpg" alt="mod" width="50%"/>
 
 ## Li-Fi Demodulator
-The Li-Fi demodulator is a standalone device with Audio Amplifier and the solar cell to demodulate the received light signals. 
+The Li-Fi demodulator is a standalone device with Audio Amplifier and a solar cell to demodulate the received light signals. 
 A potentiometer is required to adjust the level of the input signal depending on the solar cell and environment. This is also to reduce the noise level. 
-The solar cell receives converts the received light signals into corresponding voltage levels which is fed into the amplifier which provides the required gain and then the amplified signal is fed into the speaker, when the frequency is in the audible range to human ears - about 20 Hz to 20 kHz we will be able to hear the sound.
+The solar cell receiver converts the received light signals into corresponding voltage levels which are fed into the amplifier which provides the required gain and then the amplified signal is fed into the speaker, when the frequency is in the audible range to human ears - about 20 Hz to 20 kHz we will be able to hear the sound.
 
 ### Circuit Diagram of Li-Fi Demodulator
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Li-Fi-Receiver-Circuit.png" alt="mod" width="50%"/>
@@ -103,7 +103,7 @@ Test Setup
 
 [![Performace](https://img.youtube.com/vi/0lLrks1bQIg/0.jpg)](http://www.youtube.com/watch?v=0lLrks1bQIg)
 
-The above video shows the frequency response of the Li-Fi system. Next stage is building the Li-Fi Receiver 
+The above video shows the frequency response of the Li-Fi system. The next stage is building the Li-Fi Receiver 
 
 ### Building the Li-Fi Demodulator
 
@@ -115,10 +115,10 @@ Assemble the circuit in a perf board and finish the soldering.
 
 ### SCPI Server
 
-Red Pitaya board can be controlled remotely over LAN or wireless interface using MATLAB, LabVIEW, Scilab or Python via Red Pitaya SCPI (Standard Commands for Programmable Instrumentation) list of commands. SCPI interface/environment is commonly used to control T&M instruments for development, research or test automation purposes. SCPI uses a set of SCPI commands that are recognized by the instruments to enable specific actions to be taken (e.g.: acquiring data from fast analog inputs, generating signals and controlling other periphery of the Red Pitaya platform). The SCPI commands are extremely useful when complex signal analysis is required where SW environment such as MATLAB provides powerful data analysis tools and SCPI commands simple access to raw data acquired on Red Pitaya board.
+Red Pitaya board can be controlled remotely over LAN or wireless interface using MATLAB, LabVIEW, Scilab, or Python via Red Pitaya SCPI (Standard Commands for Programmable Instrumentation) list of commands. SCPI interface/environment is commonly used to control T&M instruments for development, research, or test automation purposes. SCPI uses a set of SCPI commands that are recognized by the instruments to enable specific actions to be taken (e.g.: acquiring data from fast analog inputs, generating signals, and controlling other peripheries of the Red Pitaya platform). The SCPI commands are extremely useful when a complex signal analysis is required where SW environment such as MATLAB provides powerful data analysis tools and SCPI commands simple access to raw data acquired on the Red Pitaya board.
 
 Features
-- Quickly write control routines and programs using MATLAB, LabVIEW, Scilab or Python
+- Quickly write control routines and programs using MATLAB, LabVIEW, Scilab, or Python
 - Write testing scripts and routines
 - Take quick measurements directly with your PC
 
@@ -128,10 +128,13 @@ Block Diagram explaining SCPI on Red Pitaya
 
 ### SCPI Commands over Python
 
-The Red Pitaya Module in Python provides methods which are easy to implement.
-Refer the documentation for more information on SCPI.
+The Red Pitaya Module in Python provides methods that are easy to implement.
+Refer to the documentation for more information on SCPI.
 
-This SCPI command is used to set the frequency of the fast analog output channel: rp_s.tx_txt('SOUR1:FREQ:FIX ' + str(f))
+The following SCPI command is used to set the frequency of the fast analog output channel in Python: 
+```
+rp_s.tx_txt('SOUR1:FREQ:FIX ' + str(f))
+```
 Where f is desired frequency to be outputted.
 
 To know more about interfacing Red Pitaya with Python, follow this link: https://www.youtube.com/watch?v=5vXjdO9vmiY
@@ -139,14 +142,14 @@ To know more about interfacing Red Pitaya with Python, follow this link: https:/
 ### Playing tones
 
 To play the keyboard notes, we need to know the frequency of each note. 
-For simplicity reasons I took the 5th octave. 
+For simplicity reasons, I took the 5th octave. 
 
 Here's an image from Digilent's Reference:
 
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Frequencies.PNG" alt="Cover"/>
 
-The respective frequencies of the keyboard notes for a song with required delay is to be sent to the SCPI server. 
-Refer to the code in the Python Directory of this repository. 
+The respective frequencies of the keyboard notes for a song with the required delay are to be sent to the SCPI server. 
+Refer to the code in the Python directory of this repository. 
 
 ### Testing the Li-Fi Audio System
 Click on the image below to play the video.
@@ -156,17 +159,17 @@ Click on the image below to play the video.
 ## Li-Fi Audio System with Multiple Receivers
 
 ### Reflective Solar Cell
-To have multiple receivers to same light signal, a reflective solar cell is required as shown in the image below.
+To have multiple receivers to the same light signal, a reflective solar cell is required as shown in the image below.
 
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/RSC.png" alt="RSC" width="50%"/>
 
-This specific type of Solar Cell absorbs some light falling on it and reflects the rest. Thus multiple receivers can be used by using this type of solar cell.
+This specific type of Solar Cell absorbs some light falling on it and reflects the rest.
 
 ### Block Diagram of the Multiple Receiver Setup
 
 <img src="https://github.com/yeshvanth-m/Wireless-Audio-Transmission-using-Li-Fi/blob/main/Photos/Multiple_Receiver_Block_Diagram.png" alt="BD"/>
 
-*When light is reflected from a surface, the angle of incidence is always equal to the angle of reflection, where both angles are measured from the path of the light to the normal to the surface at the point at which light strikes the surface.* This is called the law of reflection. Thus multiple receivers can be used by proper placement of Solar Cells. 
+*When light is reflected from a surface, the angle of incidence is always equal to the angle of reflection, where both angles are measured from the path of the light to the normal to the surface at the point at which light strikes the surface.* This is called the law of reflection. Thus, multiple receivers can be used by proper placement of Solar Cells. 
 
 Two sets of receivers are to be built for this model
 
@@ -202,16 +205,16 @@ $ python Play_Music.py 192.168.137.43
 # How to Use the Code
 
 The Play_Music.py file contains the code for generating the Piano Music.
-I've set the frequencies corresponding to the 5th Octave, how ever you may modify the code and add additional functionalities.
+I've set the frequencies corresponding to the 5th Octave, however, you may modify the code and add additional functionalities.
 
-The string notes contains the keyboard notes and the delays for a particular song. You can play any music of your choice just by editing the notes string.
-For example, the Piano Notes for London Bridge is falling down is given as 
+The string notes contain the keyboard notes and the delays for a particular song. You can play any music of your choice just by editing the notes string.
+For example, the Piano Notes for “London Bridge is falling down” is given as 
 
 ```
 notes = "g a g f e f g , d e f , e f g , g a g f e f g . d , g . e c"
 ```
 
-And, the notes for Mary Had a Little Lamb is give as
+And, the notes for "Mary Had a Little Lamb" is give as
 ```
 notes = "e d c d e e e , d d d , e e e , e d c d e e e e d d e d c"
 ```
@@ -220,6 +223,5 @@ You can write notes for any other piano song the same way.
 
 # Acknowledgements
 
-I would like to thank the Red Pitaya team for sending me the STEMlab 125-10 Starter Kit and giving me this oppurtunity to explore and learn new things!
-
+I would like to thank the Red Pitaya team for sending me the STEMlab 125-10 Starter Kit and giving me this opportunity to explore and learn new things!
 
